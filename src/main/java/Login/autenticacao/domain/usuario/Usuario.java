@@ -1,4 +1,4 @@
-package Login.autenticacao.domain;
+package Login.autenticacao.domain.usuario;
 
 
 import jakarta.persistence.*;
