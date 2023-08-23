@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <form method="post" action="/pessoas">     
+        
+        <input type ="hidden" name = "_method" value = "put" th:if="${pessoa != null}">
+        <input type ="hidden" name = "id" th:value = "${pessoa?.id}">
+
+        <h2>Nome:</h2>
+        <div>
+            <label for = "nome"> Nome Completo:</label>
+            <input id = "nome" name="nome" th:value = ${pessoa?.nome}>  <!--ID = A qual campo se refere - NAME = O que é passado por parametro-->
+        </div>
+        <br/> 
+
+        <div>
+            <label for = "email"> Email:</label>
+            <input id = "email" name="email" th:value = ${pessoa?.email}>
+        </div>
+            <br/>
+        <h2>Endereço:</h2>
+        <div>
+            <label for = "logradouro"> Logradouro:</label>
+            <input id = "logradouro" name="placa" th:value = ${endereco?.logradouro}>
+        </div>
+        <br/>
+        <div>
+            <label for = "bairro"> Bairro:</label>
+            <input id = "bairro" name="bairro" th:value = ${endereco?.bairro}>
+        </div>
+        <br/>
+        <div>
+            <label for = "cep"> Cep:</label>
+            <input id = "cep" name="cep" th:value = ${endereco?.cep}>
+        </div>
+        <br/>
+        <div>
+            <label for = "numero"> Numero:</label>
+            <input id = "numero" name="numero" th:value = ${endereco?.numero}>
+        </div>
+        <br/>
+        <div>
+            <label for = "complemento"> Complemento:</label>
+            <input id = "complemento" name="complemento" th:value = ${endereco?.complemento}>
+        </div>
+        <br/>
+        <div>
+            <label for = "cidade"> Cidade:</label>
+            <input id = "cidade" name="cidade" th:value = ${endereco?.cidade}>
+        </div>
+        <br/>
+        <div>
+            <label for = "uf"> UF:</label>
+            <input id = "uf" name="uf" th:value = ${endereco?.uf}>
+        </div>
+        
+        <input type = "submit" value = "Cadastrar">
+    </form>
+</form>
+</body>
+</html>
