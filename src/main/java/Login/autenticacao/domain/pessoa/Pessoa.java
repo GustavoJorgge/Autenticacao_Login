@@ -10,7 +10,7 @@ public class Pessoa {
 
     private Endereco endereco;
 
-    public Pessoa (DadosCadastroPessoa dados){
+    public Pessoa(DadosCadastroPessoa dados) {
         this.nome = dados.nome();
         this.email = dados.email();
         this.endereco = new Endereco(dados.endereco());
