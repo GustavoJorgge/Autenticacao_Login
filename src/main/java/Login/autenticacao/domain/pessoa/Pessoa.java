@@ -21,13 +21,13 @@ public class Pessoa {
     private String nome;
     private String email;
 
-    @Embedded
-    private Endereco endereco;
+   @Embedded
+   private Endereco endereco;
 
     public Pessoa(DadosCadastroPessoa dados) {
         this.nome = dados.nome();
         this.email = dados.email();
-        this.endereco = new Endereco(dados.endereco());
+       this.endereco = new Endereco(dados.endereco());
     }
 
 }

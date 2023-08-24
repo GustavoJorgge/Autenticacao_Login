@@ -6,6 +6,6 @@ public record DadosCadastroPessoa(
 
         String nome,
         String email,
-
-        DadosEndereco endereco) {
+        DadosEndereco endereco
+) {
 }
