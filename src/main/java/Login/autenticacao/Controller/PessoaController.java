@@ -19,7 +19,7 @@ public class PessoaController {
 
     @GetMapping
     public String carregaPaginaCadastro(){
-        return "cadastro/formulario";
+        return "pessoas/formulario";
     }
 
     @PostMapping
