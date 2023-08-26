@@ -14,7 +14,6 @@
 > PostGre
 ### Funcionalidades:
 - Usuario faz cadastro✅
-- CRUD no cadastro ( Em andamento )
-- Usuario realiza login ( Pendente )
-- Autenticação via TOKEN ( Pendente )
-- Buscar CEP Correios ( Pendente )
+- CRUD no cadastro <img src="https://www.superiorlawncareusa.com/wp-content/uploads/2020/05/loading-gif-png-5.gif" width="15" height="15"/>
+- Usuario realiza login ⏸️
+- Autenticação via TOKEN ⏸️
