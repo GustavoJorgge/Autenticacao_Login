@@ -16,4 +16,5 @@
 - Usuario faz cadastro✅
 - CRUD no cadastro ( Em andamento )
 - Usuario realiza login ( Pendente )
+- Autenticação via TOKEN ( Pendente )
 - Buscar CEP Correios ( Pendente )
