@@ -12,3 +12,8 @@
   - **Spring Boot Web**
 ### Banco de dados:
 > PostGre
+### Funcionalidades:
+- Usuario faz cadastro✅
+- CRUD no cadastro ( Em andamento )
+- Usuario realiza login ( Pendente )
+- Buscar CEP Correios ( Pendente )
