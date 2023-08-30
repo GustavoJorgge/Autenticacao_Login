@@ -10,7 +10,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
-@Controller
+@RestController
 @RequestMapping("pessoas")
 public class PessoaController {
 
@@ -24,18 +24,8 @@ public class PessoaController {
 
     @PostMapping
     @Transactional
-    public void cadastrar(@RequestParam String nome,
-                          @RequestParam String email,
-                          @RequestParam String logradouro,
-                          @RequestParam String bairro,
-                          @RequestParam String cep,
-                          @RequestParam String cidade,
-                          @RequestParam String uf,
-                          @RequestParam String complemento,
-                          @RequestParam String numero) {
-
-        DadosEndereco endereco = new DadosEndereco(logradouro, bairro, cep, cidade, uf, complemento, numero);
-        DadosCadastroPessoa dados = new DadosCadastroPessoa(nome, email, endereco);
+    public void cadastrar(@RequestBody DadosCadastroPessoa dados) {
+        System.out.println("chamando requisição");
         var pessoa = new Pessoa(dados);
         repository.save(pessoa);
     }
